@@ -119,3 +119,94 @@ button:focus-visible{outline:3px solid #94bd71;outline-offset:3px}
 .arrow-flip{transform:rotate(180deg)}
 @media(max-width:900px){.hero{height:680px}.hero-content{left:7vw}.hero-side-note{display:none}.hero-bottom-card{right:22px;bottom:22px}.trust-strip{gap:20px;flex-wrap:wrap}.home-collection{padding:70px 7vw;gap:5%}.plant-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cart-layout{grid-template-columns:1fr}.order-summary{max-width:none}}
 @media(max-width:600px){.navbar{height:68px;padding:0 16px}.brand{font-size:16px;gap:7px}.brand-mark{width:30px;height:30px}.nav-links{gap:0}.nav-link{padding:9px 8px;font-size:11px;gap:4px}.nav-link svg{display:none}.nav-link.cart-link{padding-right:7px}.cart-count{min-width:18px;height:18px;font-size:10px}.hero{min-height:650px;height:78vh;background-position:58% center}.hero-content{left:24px;right:22px}.hero h1{font-size:58px}.hero-description{font-size:13px;max-width:340px}.hero-bottom-card{min-width:0;left:18px;right:18px;bottom:18px}.trust-strip{display:grid;grid-template-columns:1fr;justify-content:start;padding:20px 27px;gap:14px}.about-section{padding:70px 20px}.values-grid{grid-template-columns:1fr;gap:12px}.values-grid article{padding:22px}.home-collection{grid-template-columns:1fr;padding:62px 22px 80px;gap:36px}.collection-visual img{height:280px}.collection-stamp{left:-7px}.footer{flex-wrap:wrap;justify-content:center;text-align:center;padding:25px 18px}.plant-page,.cart-page{padding:35px 16px 65px}.plant-heading{padding:20px 0 35px}.plant-heading h1,.cart-title-row h1{font-size:43px}.plant-meta{gap:12px;flex-wrap:wrap;font-size:10px}.category-title h2{font-size:24px}.plant-grid{grid-template-columns:1fr;gap:15px}.plant-image-wrap{height:255px}.cart-title-row{align-items:flex-start;flex-direction:column;padding:15px 0 30px;gap:9px}.cart-items-list{padding:0 12px}.cart-list-head{grid-template-columns:minmax(0,1fr) 87px 52px;gap:8px;font-size:8px}.cart-row{grid-template-columns:minmax(0,1fr) 87px 52px;gap:8px}.cart-product{gap:9px}.cart-product img{width:58px;height:65px}.cart-product h3{font-size:14px}.cart-product p{font-size:10px}.quantity-control{gap:5px}.quantity-control button{width:23px;height:23px}.line-total{font-size:11px}.remove-button{font-size:9px}.order-summary{padding:20px}}
+
+/* =========================================
+   COURSERA ASSESSMENT REQUIRED CSS
+   Paradise Nursery Landing Page
+========================================= */
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Required background image class */
+.background-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 640px;
+
+  background-image:
+    linear-gradient(
+      rgba(12, 39, 28, 0.65),
+      rgba(12, 39, 28, 0.35)
+    ),
+    url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2200&q=90');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* About Us required container */
+.about-us-container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Product listing navigation */
+.product-list-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #f1f3e9;
+  border-radius: 8px;
+}
+
+.product-list-navbar a {
+  text-decoration: none;
+  color: #174c38;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.product-list-navbar a:hover {
+  color: #6e9160;
+}
+
+/* Product listing required class */
+.product-list {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.product-list:hover {
+  transform: translateY(-4px);
+}
+
+/* Cart container */
+.cart-container {
+  width: 100%;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .background-image {
+    min-height: 650px;
+    background-position: center;
+  }
+
+  .product-list-navbar {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}

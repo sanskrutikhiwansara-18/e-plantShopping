@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { ArrowRight, ArrowUpRight, Leaf, Sprout, Sparkles } from 'lucide-react';
-import Navbar from './components/Navbar.jsx';
-import AboutUs from './components/AboutUs.jsx';
-import ProductList from './components/ProductList.jsx';
-import CartItem from './components/CartItem.jsx';
+import Navbar from './Navbar.jsx';
+import AboutUs from './AboutUs.jsx';
+import ProductList from './ProductList.jsx';
+import CartItem from './CartItem.jsx';
 
 export default function App() {
   const [page, setPage] = useState('home');

@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { addToCart } from '../features/cart/CartSlice.jsx';
-import { categories } from '../data/plants.js';
+import { addToCart } from './CartSlice.jsx';
+import { categories } from './plants.js';
 import { Check, Plus, ShoppingBag } from 'lucide-react';
 
 export default function ProductList() {
